@@ -128,7 +128,6 @@ p { margin: 0 0 1em; }
   display: inline-block; font-family: var(--head); font-size: 11px; font-weight: 600; letter-spacing: .8px;
   text-transform: uppercase; color: #fff; background: var(--ink); padding: 3px 10px; margin-bottom: 14px;
 }
-.pub.pending .pub-year { background: transparent; color: var(--muted); border: 1px solid #ccc; }
 .pub h3 { font-size: 16.5px; font-weight: 600; line-height: 1.45; margin-bottom: 10px; }
 .pub h3 a { text-decoration: none; background: linear-gradient(var(--ink), var(--ink)) 0 100% / 0 1px no-repeat; transition: background-size .3s; }
 .pub h3 a:hover { background-size: 100% 1px; }
@@ -146,6 +145,9 @@ p { margin: 0 0 1em; }
   border: 1px solid var(--ink); padding: 4px 12px; transition: background .2s, color .2s;
 }
 .pub-links a:hover { background: var(--ink); color: #fff; }
+.pub-links { align-items: center; }
+.cites { margin-left: auto; font: 600 12px var(--head); color: var(--muted); }
+.pubs-more { text-align: center; margin: 44px 0 0; }
 
 /* ---------- News band ---------- */
 .band {
@@ -212,10 +214,6 @@ p { margin: 0 0 1em; }
 .timeline strong { display: block; font-family: var(--head); color: var(--ink); font-size: 15.5px; }
 .timeline span { display: block; font-size: 14.5px; }
 .timeline em { display: block; font-size: 13.5px; color: var(--muted); }
-.awards-title { margin-top: 48px; }
-.awards { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 0 48px; }
-.awards li { display: grid; grid-template-columns: 70px 1fr; gap: 10px; padding: 12px 0; border-bottom: 1px solid var(--line); font-size: 14.5px; }
-.awards time { font-family: var(--head); font-weight: 800; color: var(--ink); font-size: 14px; }
 
 /* ---------- Contact ---------- */
 .contact { display: grid; grid-template-columns: 1fr 1.3fr; gap: 56px; }
@@ -278,7 +276,7 @@ p { margin: 0 0 1em; }
   .container { padding: 0 16px; }
   .section { padding: 72px 0; }
   .section-title { font-size: 32px; margin-bottom: 40px; }
-  .cards-3, .awards { grid-template-columns: 1fr; }
+  .cards-3 { grid-template-columns: 1fr; }
   .hero-hi { font-size: 20px; }
   .hero-title { font-size: 34px; white-space: normal; }
   .pub { padding: 22px 18px; }
