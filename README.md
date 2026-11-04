@@ -48,7 +48,6 @@ Edit `index.html` and push (or edit the file directly on GitHub and commit). The
 - **Add your portrait to the hero:** save a photo of yourself, ideally on a dark background, as
   `assets/hero.jpg`. It appears on the right side of the black hero section automatically; no code change needed.
 - **Typing words in the hero:** edit the `words` list in `main.js`.
-- **Skill bars:** edit the percentages (`--w:95%` and the `95%` label) in the About section of `index.html`.
 - **New paper:** copy one `<li class="pub" …>` block in the Publications section and edit it.
   The `data-tags` value (`causal`, `health`, `review`) controls which filter buttons show it.
 - **News:** add an `<li>` at the top of the News list.
