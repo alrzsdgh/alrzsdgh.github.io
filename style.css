@@ -80,6 +80,7 @@ p { margin: 0 0 1em; }
 @keyframes wheel { 0% { transform: translateY(0); opacity: 1; } 80% { transform: translateY(14px); opacity: 0; } 100% { opacity: 0; } }
 
 /* ---------- About ---------- */
+.container.about { max-width: none; padding: 0 6vw; }
 .about-title { font-size: 28px; font-weight: 400; margin-bottom: 22px; }
 .about p { color: var(--muted); font-size: 16.5px; }
 .about strong { color: var(--ink); }
