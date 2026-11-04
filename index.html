@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alireza Sadeghi</title>
+  <meta name="description" content="Alireza Sadeghi — Ph.D. student in Electrical Engineering at Clemson University, working on causal representation learning and AI for healthcare.">
+  <meta name="author" content="Alireza Sadeghi">
+
+  <!-- Social preview -->
+  <meta property="og:title" content="Alireza Sadeghi">
+  <meta property="og:description" content="Ph.D. student at Clemson University · Causal representation learning · AI for healthcare">
+  <meta property="og:type" content="website">
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%23522D80'/><text x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial,sans-serif' font-weight='bold' font-size='28' fill='%23F56600'>AS</text></svg>">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== Sidebar ===== -->
+  <aside class="sidebar">
+    <div class="profile">
+      <!-- To use a real photo: put it at assets/photo.jpg and replace the div below with
+           <img class="photo" src="assets/photo.jpg" alt="Alireza Sadeghi"> -->
+      <div class="photo avatar" aria-hidden="true">AS</div>
+      <h1 class="name">Alireza Sadeghi</h1>
+      <p class="role">Ph.D. Student @ Clemson University</p>
+    </div>
+
+    <nav class="tabs" aria-label="Sections">
+      <a href="#about" data-tab="about" class="active">About Me</a>
+      <a href="#background" data-tab="background">Background</a>
+      <a href="#publications" data-tab="publications">Publications</a>
+      <a href="#projects" data-tab="projects">Projects</a>
+    </nav>
+
+    <div class="side-links">
+      <a href="mailto:alirezs@clemson.edu" title="Email" aria-label="Email"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></a>
+      <a href="https://scholar.google.com/citations?user=aDzRihMAAAAJ&amp;hl=en" target="_blank" rel="noopener" title="Google Scholar" aria-label="Google Scholar"><svg viewBox="0 0 24 24"><path d="M12 3 1 9l11 6 9-4.9V17h2V9L12 3z"/><path d="M5 13.2V17c0 1.7 3.1 3 7 3s7-1.3 7-3v-3.8"/></svg></a>
+      <a href="https://github.com/alrzsdgh" target="_blank" rel="noopener" title="GitHub" aria-label="GitHub"><svg viewBox="0 0 24 24"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg></a>
+      <a href="https://www.linkedin.com/in/alireza-sadeghi-85ba14180/" target="_blank" rel="noopener" title="LinkedIn" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/></svg></a>
+      <a href="assets/Alireza_Sadeghi_CV.pdf" target="_blank" rel="noopener" title="CV (PDF)" aria-label="CV"><svg viewBox="0 0 24 24"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M9 13h6M9 17h6"/></svg></a>
+    </div>
+  </aside>
+
+  <!-- ===== Main column ===== -->
+  <div class="main">
+    <!-- Banner: drop a photo at assets/banner.jpg (e.g. a Clemson campus picture you took) and it shows here.
+         Without it, the purple/orange background with the ECG-to-causal-graph line is shown. -->
+    <header class="banner" aria-hidden="true">
+      <svg class="signal" viewBox="0 0 1000 80" preserveAspectRatio="none">
+        <path class="ecg" d="M0 50 H140 l10 -6 l10 6 H200 l8 8 l12 -52 l12 64 l8 -20 H300 l14 -10 l14 10 H470 l10 -6 l10 6 H530 l8 8 l12 -52 l12 64 l8 -20 H630 l14 -10 l14 10 H760"/>
+        <g class="dag">
+          <path d="M760 50 L820 24 M760 50 L820 62 M820 24 L890 40 M820 62 L890 40 M890 40 L960 40"/>
+          <circle cx="760" cy="50" r="5"/><circle cx="820" cy="24" r="5"/><circle cx="820" cy="62" r="5"/>
+          <circle cx="890" cy="40" r="5"/><circle cx="960" cy="40" r="6" class="dag-out"/>
+        </g>
+      </svg>
+    </header>
+
+    <main class="content">
+
+      <!-- ===== About ===== -->
+      <section class="panel active" id="about">
+        <h2>About Me</h2>
+        <p>
+          I am a Ph.D. student in Electrical Engineering at <strong>Clemson University</strong> in South Carolina,
+          working as a Graduate Research Assistant with <strong>Prof. Wael AbdAlmageed</strong>.
+          My research sits between <strong>causal representation learning</strong> and <strong>AI for healthcare</strong>:
+          I build models that learn disentangled, causally meaningful representations from images, text and
+          time series, and turn them into diagnostic tools clinicians can trust.
+        </p>
+        <p>
+          Before Clemson, I spent three years as a research assistant at Sari Medical Center, developing deep
+          learning systems for 12-lead ECG analysis, CT-based COVID-19 diagnosis and parasite detection in
+          microscopy. I hold an M.Sc. in Mechatronics Engineering from the University of Tehran and a B.Sc. in
+          Mechanical Engineering from Amirkabir University of Technology (Tehran Polytechnic).
+        </p>
+
+        <div class="stats">
+          <div><b>135</b><span>Citations</span></div>
+          <div><b>6</b><span>h-index</span></div>
+          <div><b>7</b><span>Papers</span></div>
+        </div>
+        <p class="note">Google Scholar, November 2026</p>
+
+        <h3>Research Interests</h3>
+        <ul class="interests">
+          <li>Causal Representation Learning &amp; Counterfactual Reasoning</li>
+          <li>AI for Healthcare</li>
+          <li>Medical Signal &amp; Image Processing</li>
+          <li>Explainable AI</li>
+          <li>Causal Deep Learning for Time Series</li>
+        </ul>
+
+        <h3>News</h3>
+        <ul class="news">
+          <li><time>2026</time><span>Our review and benchmark of interpretable graph-based models for multimodal biomedical data is published in <em>Nature Communications</em>.</span></li>
+          <li><time>Mar 2026</time><span>New preprint on <a href="https://arxiv.org/abs/2603.17405" target="_blank" rel="noopener">benchmarks and metrics for causal representation learning</a>.</span></li>
+          <li><time>2026</time><span>Submitted our causal multimodal generative model to ECCV 2026.</span></li>
+          <li><time>2025</time><span>Started my Ph.D. at Clemson University with a fully funded scholarship.</span></li>
+          <li><time>2024</time><span><a href="https://www.sciencedirect.com/science/article/pii/S0010482524012113" target="_blank" rel="noopener">3DECG-Net</a> published in <em>Computers in Biology and Medicine</em>.</span></li>
+        </ul>
+
+        <div class="contact">
+          <h4>Contact Me</h4>
+          <p>Email: <a href="mailto:alirezs@clemson.edu">alirezs@clemson.edu</a> | <a href="mailto:alrz.sdgh@gmail.com">alrz.sdgh@gmail.com</a></p>
+          <p>Links:
+            <a href="https://scholar.google.com/citations?user=aDzRihMAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a> |
+            <a href="https://github.com/alrzsdgh" target="_blank" rel="noopener">GitHub</a> |
+            <a href="https://www.linkedin.com/in/alireza-sadeghi-85ba14180/" target="_blank" rel="noopener">LinkedIn</a> |
+            <a href="assets/Alireza_Sadeghi_CV.pdf" target="_blank" rel="noopener">CV</a>
+          </p>
+        </div>
+      </section>
+
+      <!-- ===== Background ===== -->
+      <section class="panel" id="background">
+        <h2>Background</h2>
+
+        <h3>Education</h3>
+        <ul class="entries">
+          <li>
+            <div class="entry-head"><strong>Clemson University</strong><time>2025 – Present</time></div>
+            <p>Ph.D., Electrical Engineering · Clemson, SC, USA</p>
+          </li>
+          <li>
+            <div class="entry-head"><strong>University of Tehran</strong><time>2018 – 2021</time></div>
+            <p>M.Sc., Mechatronics Engineering · Tehran, Iran</p>
+            <p class="muted">Thesis: Clinical Diagnosis Identification from 12-Lead ECG Using Deep Learning</p>
+          </li>
+          <li>
+            <div class="entry-head"><strong>Amirkabir University of Technology (Tehran Polytechnic)</strong><time>2013 – 2018</time></div>
+            <p>B.Sc., Mechanical Engineering – Manufacturing and Production · Tehran, Iran</p>
+            <p class="muted">Thesis: Design, Analysis and Fabrication of Rehabilitation Soft-Robots</p>
+          </li>
+        </ul>
+
+        <h3>Experience</h3>
+        <ul class="entries">
+          <li>
+            <div class="entry-head"><strong>Graduate Research Assistant</strong><time>2025 – Present</time></div>
+            <p>Clemson University</p>
+          </li>
+          <li>
+            <div class="entry-head"><strong>Research Assistant</strong><time>2022 – 2025</time></div>
+            <p>Sari Medical Center</p>
+          </li>
+          <li>
+            <div class="entry-head"><strong>Teaching Assistant, Machine Learning</strong><time>2021</time></div>
+            <p>Course of Dr. A. Rezaee, University of Tehran</p>
+          </li>
+          <li>
+            <div class="entry-head"><strong>Mathematics &amp; Physics Tutor</strong><time>2013 – 2017</time></div>
+            <p>High school students</p>
+          </li>
+        </ul>
+
+        <h3>Honors &amp; Awards</h3>
+        <ul class="awards">
+          <li><time>2025</time>Fully funded Ph.D. scholarship, Clemson University</li>
+          <li><time>2022</time>Top 3% in the Data Science track of CodeCup, Iran's largest programming competition</li>
+          <li><time>2022</time>Top 4% in the nationwide ML &amp; Data Science competition, Amirkabir University of Technology</li>
+          <li><time>2021</time>Top 10% GPA among 2021 Mechatronics graduates, University of Tehran</li>
+          <li><time>2021</time>Top 14% in the Kaggle <a href="https://www.kaggle.com/competitions/rsna-miccai-brain-tumor-radiogenomic-classification" target="_blank" rel="noopener">RSNA-MICCAI Brain Tumor Radiogenomic Classification</a> challenge</li>
+          <li><time>2018</time>Top 1% in Iran's national entrance exam for M.Sc. Mechatronics</li>
+          <li><time>2013</time>Top 0.5% in Iran's national university entrance exam (Mathematics &amp; Physics)</li>
+        </ul>
+
+        <h3>Skills</h3>
+        <p class="tools">
+          <span>Python</span><span>PyTorch</span><span>TensorFlow / Keras</span><span>scikit-learn</span><span>NumPy · Pandas</span><span>R</span><span>MATLAB</span><span>LaTeX</span>
+        </p>
+      </section>
+
+      <!-- ===== Publications ===== -->
+      <section class="panel" id="publications">
+        <h2>Publications</h2>
+        <div class="filters" role="group" aria-label="Filter publications">
+          <button class="chip active" data-filter="all">All</button>
+          <button class="chip" data-filter="causal">Causal ML</button>
+          <button class="chip" data-filter="health">Healthcare AI</button>
+          <button class="chip" data-filter="review">Reviews</button>
+        </div>
+
+        <ul class="pubs">
+          <li class="pub" data-tags="causal">
+            <a class="pub-title" href="https://arxiv.org/abs/2603.17405" target="_blank" rel="noopener">Causal Representation Learning on High-Dimensional Data: Benchmarks, Reproducibility, and Evaluation Metrics</a>
+            <p class="pub-authors"><b>A. Sadeghi</b>, W. AbdAlmageed</p>
+            <p class="pub-venue">arXiv preprint, under review at <em>Transactions on Machine Learning Research</em>, 2026 | <a href="https://arxiv.org/abs/2603.17405" target="_blank" rel="noopener">arXiv</a></p>
+          </li>
+          <li class="pub" data-tags="health review">
+            <a class="pub-title" href="https://arxiv.org/abs/2505.01696" target="_blank" rel="noopener">Interpretable graph-based models on multimodal biomedical data integration: A technical review and benchmarking</a>
+            <p class="pub-authors"><b>A. Sadeghi</b>, F. Hajati, A. Argha, N. H. Lovell, M. Yang, H. Alinejad-Rokny</p>
+            <p class="pub-venue"><em>Nature Communications</em>, 2026 | <a href="https://arxiv.org/abs/2505.01696" target="_blank" rel="noopener">arXiv</a> | <a href="https://github.com/alrzsdgh/Graph-Review" target="_blank" rel="noopener">Code</a></p>
+          </li>
+          <li class="pub" data-tags="health">
+            <a class="pub-title" href="https://www.sciencedirect.com/science/article/pii/S0010482524012113" target="_blank" rel="noopener">3DECG-Net: ECG fusion network for multi-label cardiac arrhythmia detection</a>
+            <p class="pub-authors"><b>A. Sadeghi</b>, F. Hajati, A. Rezaee, M. Sadeghi, A. Argha, H. Alinejad-Rokny</p>
+            <p class="pub-venue"><em>Computers in Biology and Medicine</em>, 2024 | <a href="https://www.sciencedirect.com/science/article/pii/S0010482524012113" target="_blank" rel="noopener">Link</a> | <a href="https://github.com/alrzsdgh/3DECG-Net" target="_blank" rel="noopener">Code</a></p>
+          </li>
+          <li class="pub" data-tags="health">
+            <a class="pub-title" href="https://link.springer.com/article/10.1186/s12879-024-09428-4" target="_blank" rel="noopener">A deep learning-based model for detecting Leishmania amastigotes in microscopic slides: a new approach to telemedicine</a>
+            <p class="pub-authors"><b>A. Sadeghi</b>, M. Sadeghi, M. Fakhar, Z. Zakariaei, M. Sadeghi, R. Bastani</p>
+            <p class="pub-venue"><em>BMC Infectious Diseases</em>, 2024 | <a href="https://link.springer.com/article/10.1186/s12879-024-09428-4" target="_blank" rel="noopener">Link</a> | <a href="https://github.com/alrzsdgh/leishmania" target="_blank" rel="noopener">Code</a></p>
+          </li>
+          <li class="pub" data-tags="health">
+            <a class="pub-title" href="https://www.nature.com/articles/s41598-023-50742-9" target="_blank" rel="noopener">Potential diagnostic application of a novel deep learning-based approach for COVID-19</a>
+            <p class="pub-authors"><b>A. Sadeghi</b>, M. Sadeghi, A. Sharifpour, M. Fakhar, Z. Zakariaei, M. Sadeghi, M. Rokni, A. Zakariaei, E. S. Banimostafavi, F. Hajati</p>
+            <p class="pub-venue"><em>Scientific Reports</em>, 2024 | <a href="https://www.nature.com/articles/s41598-023-50742-9" target="_blank" rel="noopener">Link</a> | <a href="https://github.com/alrzsdgh/COVID" target="_blank" rel="noopener">Code</a></p>
+          </li>
+          <li class="pub" data-tags="health review">
+            <a class="pub-title" href="https://onlinelibrary.wiley.com/doi/full/10.1155/2024/6621199" target="_blank" rel="noopener">Scoping review of deep learning techniques for diagnosis, drug discovery, and vaccine development in Leishmaniasis</a>
+            <p class="pub-authors"><b>A. Sadeghi</b>, M. Sadeghi, M. Fakhar, Z. Zakariaei, M. Sadeghi</p>
+            <p class="pub-venue"><em>Transboundary and Emerging Diseases</em>, 2024 | <a href="https://onlinelibrary.wiley.com/doi/full/10.1155/2024/6621199" target="_blank" rel="noopener">Link</a></p>
+          </li>
+          <li class="pub" data-tags="health">
+            <a class="pub-title" href="https://www.sciencedirect.com/science/article/pii/S0376871623012620" target="_blank" rel="noopener">The clinico-epidemiological, diagnostic and therapeutic aspects of methanol poisoning: A five-year retrospective study, northern Iran</a>
+            <p class="pub-authors">M. Sadeghi, M. Fakhar, S. M. Hoseininejad, Z. Zakariaei, <b>A. Sadeghi</b></p>
+            <p class="pub-venue"><em>Drug and Alcohol Dependence</em>, 2023 | <a href="https://www.sciencedirect.com/science/article/pii/S0376871623012620" target="_blank" rel="noopener">Link</a></p>
+          </li>
+        </ul>
+
+        <h3 class="pubs-sub">Under Review &amp; In Preparation</h3>
+        <ul class="pubs">
+          <li class="pub" data-tags="causal">
+            <span class="pub-title">A Causal Multimodal Generative Model for Disentangled Representation Learning and Counterfactual Reasoning</span>
+            <p class="pub-authors"><b>A. Sadeghi</b>, W. AbdAlmageed</p>
+            <p class="pub-venue">Submitted to ECCV 2026</p>
+          </li>
+          <li class="pub" data-tags="health review">
+            <span class="pub-title">Deep Learning Techniques on Cardiotocography Data for Detection of Fetal Distress: A Technical Review</span>
+            <p class="pub-authors"><b>A. Sadeghi</b>, M. Sadeghi, K. Yaghoubinia, V. Smith, R. Galinsky, F. Marzbanrad</p>
+            <p class="pub-venue">Under revision at <em>BMC Pediatrics</em></p>
+          </li>
+          <li class="pub" data-tags="causal">
+            <span class="pub-title">GranTVAE: A Granger-based Transformer Variational Autoencoder for Multi-Channel Time Series Prediction</span>
+            <p class="pub-authors"><b>A. Sadeghi</b></p>
+            <p class="pub-venue">In preparation | <a href="https://github.com/alrzsdgh/GranTVAE" target="_blank" rel="noopener">Code</a></p>
+          </li>
+        </ul>
+      </section>
+
+      <!-- ===== Projects ===== -->
+      <section class="panel" id="projects">
+        <h2>Projects</h2>
+        <div class="projects">
+          <article class="project">
+            <p class="tag">Causal ML · Time Series</p>
+            <h4>GranTVAE</h4>
+            <p>Integrates Granger causality into a Transformer-based VAE, so the model discovers causal structure and forecasts multichannel time series together. Robust to noise, irregular sampling and missing data.</p>
+            <a href="https://github.com/alrzsdgh/GranTVAE" target="_blank" rel="noopener">Repository →</a>
+          </article>
+          <article class="project">
+            <p class="tag">Causal ML · Vision-Language</p>
+            <h4>Causal Multimodal Generative Model</h4>
+            <p>Combines images with VLM-generated descriptions to learn disentangled latent factors, infer how they cause each other, and generate counterfactual images.</p>
+          </article>
+          <article class="project">
+            <p class="tag">Cardiology · ECG</p>
+            <h4>3DECG-Net</h4>
+            <p>Turns 12-lead ECGs into 3D recurrence-plot volumes and classifies seven arrhythmias with a Conv-LSTM residual network and multi-head attention. LIME explains each lead's contribution.</p>
+            <a href="https://github.com/alrzsdgh/3DECG-Net" target="_blank" rel="noopener">Repository →</a>
+          </article>
+          <article class="project">
+            <p class="tag">Radiology · CT</p>
+            <h4>MASERes for COVID-19</h4>
+            <p>A 3D Multi-Head Attention Squeeze-and-Excitation Residual Network for patient-level COVID-19 diagnosis from CT volumes, alongside slice-level transfer learning models.</p>
+            <a href="https://github.com/alrzsdgh/COVID" target="_blank" rel="noopener">Repository →</a>
+          </article>
+          <article class="project">
+            <p class="tag">Parasitology · Microscopy</p>
+            <h4>LeishFuNet</h4>
+            <p>Detects Leishmania parasites in microscopic slides by fusing VGG19, ResNet50, MobileNetV2 and DenseNet169 with same-domain transfer learning, with Grad-CAM explanations for telemedicine.</p>
+            <a href="https://github.com/alrzsdgh/leishmania" target="_blank" rel="noopener">Repository →</a>
+          </article>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer">© <span id="year">2026</span> Alireza Sadeghi · Last updated November 2026</footer>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
