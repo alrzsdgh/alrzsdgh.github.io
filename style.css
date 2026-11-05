@@ -54,7 +54,7 @@ p { margin: 0 0 1em; }
 .hero-photo {
   /* Optional portrait: save a dark-background photo as assets/hero.jpg */
   position: absolute; inset: 0 0 0 auto; width: 45%;
-  background: url("assets/hero.jpg") right center / cover no-repeat;
+  background: url("assets/hero.jpg") 55% 20% / cover no-repeat;
   -webkit-mask-image: linear-gradient(to right, transparent, #000 40%);
           mask-image: linear-gradient(to right, transparent, #000 40%);
 }
@@ -256,7 +256,13 @@ p { margin: 0 0 1em; }
   .cards-3 { grid-template-columns: 1fr 1fr; }
   .bg-grid, .contact { grid-template-columns: 1fr; gap: 40px; }
   .counters { grid-template-columns: repeat(2, 1fr); row-gap: 40px; }
-  .hero-photo { width: 70%; opacity: .45; }
+  /* On tablets and phones the wide photo would sit behind the text, so show it as a round portrait above the name */
+  .hero-photo { display: none; }
+  .hero-content::before {
+    content: ""; display: block; width: 180px; height: 180px; margin: 0 auto 24px; border-radius: 50%;
+    background: #111 url("assets/hero.jpg") 50% 12% / 300% auto no-repeat;
+    border: 3px solid rgba(255,255,255,.18); box-shadow: 0 10px 30px rgba(0,0,0,.5);
+  }
 }
 @media (max-width: 860px) {
   .nav-toggle { display: block; }
@@ -279,6 +285,7 @@ p { margin: 0 0 1em; }
   .cards-3 { grid-template-columns: 1fr; }
   .hero-hi { font-size: 20px; }
   .hero-title { font-size: 34px; white-space: normal; }
+  .hero-content::before { width: 148px; height: 148px; }
   .pub { padding: 22px 18px; }
   .pub.featured::after { display: none; }
   .news li { grid-template-columns: 1fr; gap: 6px; padding: 18px 0; }
